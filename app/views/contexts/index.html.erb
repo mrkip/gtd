@@ -1,17 +1,24 @@
-<h1>Listing contexts</h1>
-
-<div style="width: 800px">
-<table id="products" class="display" data-source="<%= contexts_url(format: "json")%>">
-<thead>
-  <tr class="Grade A">
-    <th>Name</th>
-    <th>Description</th>
-  </tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+<div style="width:800px">
+<div  class="ui-tabs-nav ui-widget-header ui-corner-all " style="float:left; width:100%">
+  <div style="margin:2px;">
+    <div style="float:left; font-weight:300; font-size: 18px; padding: 3px; padding-right:20px;" class="ui-state-default ui-corner-all">Contexts</div>
+       <ul class="ui-widget ui-helper-clearfix ui-corner-all" style="margin: 2px; padding: 4px 0;cursor: pointer;float:right; list-style: none;">
+          <li id="addIcon" class="ui-state-default ui-corner-all" title="Add Context">
+            <span class="ui-icon ui-icon-circle-plus"></span>
+          </li>
+      </ul>
+  </div>
 </div>
-<br />
-
-<%= link_to 'New Context', new_context_path %>
+  <div style="clear: both;"></div>
+<div class="full_width" style="margin-top:1em; ">
+  <table id="products" class="display" data-source="<%= contexts_url(format: "json")%>">
+    <thead>
+      <tr class="Grade A">
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+</div>

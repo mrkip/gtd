@@ -11,3 +11,6 @@ jQuery ->
 
     $("#products tbody").on "click", "tr", (event) ->
       window.location.href = "contexts/" + $(this).attr("id")
+
+    $("#addIcon").on "click" , (event) ->
+      window.location.href = "contexts/new"
