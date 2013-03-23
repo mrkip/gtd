@@ -52,7 +52,7 @@ class ContextsController < ApplicationController
     end
   end
 
-  # PUT /contexts/1
+  #x PUT /contexts/1
   # PUT /contexts/1.json
   def update
     @context = Context.find(params[:id])
